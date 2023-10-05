@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Tima bonk{% endblock %}
+
+{% block content %}
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    </head>
+
+    <a href="{% url 'home' %}">
+        <img src="{% static 'images/OIP.jpg' %}" class="centered-image-small">
+    </a>
+
+    <p>
+        <img src="{% static 'images/video.gif' %}">
+        <img src="{% static 'images/video.gif' %}">
+        <img src="{% static 'images/video.gif' %}">
+        <img src="{% static 'images/video.gif' %}">
+    </p>
+    
+{% endblock %}

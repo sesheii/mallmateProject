@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}MallMate{% endblock %}</title>
+    <!-- Підключення Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        /* Ваші власні стилі для нижнього колонтитула */
+        .footer {
+            background-color: #73716f;
+            color: #ffffff;
+            position: bottom;
+            bottom: 0
+            width: 100%;
+        }
+
+        body {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <!-- Заголовок навігаційної панелі, який можна змінювати -->
+            <span class="navbar-brand">{% block page_title %}MallMate{% endblock %}</span>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Основний вміст сторінки буде розміщений тут -->
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Нижній колонтитул -->
+    <footer class="footer text-center py-3">
+        <div class="container">
+            <p>MallMate 2023</p>
+            <p>Адмінська пошта: admin@example.com</p>
+        </div>
+    </footer>
+
+    <!-- Підключення Bootstrap JS та jQuery (обов'язково після вмісту сторінки) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

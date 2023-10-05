@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}PRESS BUTTON{% endblock %}
+
+{% block content %}
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    </head>
+<!-- Зображення-кнопка -->
+    <a href="{% url 'tima' %}">
+        <img src="{% static 'images/R.png' %}" alt="Зображення" class="centered-image-small">
+    </a>
+    <p>
+        <img src="{% static 'images/1.jpg' %}" alt="Зображення" class="centered-image">
+    </p>
+{% endblock %}

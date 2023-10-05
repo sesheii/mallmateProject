@@ -1,0 +1,12 @@
+.centered-image {
+   display: block;
+   margin: 0 auto;
+   width: 600px;
+}
+
+.centered-image-small {
+   display: block;
+   margin: 0 auto;
+   width: 200px;
+}
+
